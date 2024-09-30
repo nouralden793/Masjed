@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نظام حافظي القران</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="layout z-[9999] fixed top-[58px] left-0 w-full h-[95vh] bg-white centered-flex none sm:top-[68px]"
+    >
+      <div class="container centered-flex flex-col">
+        <h1 class="text-[40px] font-extrabold mb-2 text-secondary">
+          نظام حافظي القرأن
+        </h1>
+        <p class="py-2 text-lg text-center text-gray-500">
+          نحن لدينا نظام لمساعدة الشيوخ <br />في تحفيظ القرأن للحافظين
+        </p>
+        <p class="cons font-semibold pb-1 pt-2 text-black text-xl">:المميزات</p>
+        <ol class="list-decimal text-left text-lg w-[75%] sm:w-fit">
+          <li>سهولة استخدام النظام</li>
+          <li>بساطة اضافلة الحافظين الجدد</li>
+          <li>البحث السريع</li>
+          <li>تحديد الحافظين على حسب الجزء الذي هم فيه</li>
+        </ol>
+        <button class="btn my-5">استخدم الأن</button>
+      </div>
+    </div>
+    <div class="project pb-[90px]">
+      <header class="bg-[#f9f9f9] shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container py-4 between-flex">
+          <div class="logo text-xl sm:text-3xl font-bold cursor-pointer">
+            مسجد المعارف
+          </div>
+          <div class="mode dark-mode">
+            <img src="./moon-waning-cresent-svgrepo-com.svg" alt="" /><span
+              >الوضع الغامق</span
+            >
+          </div>
+        </div>
+      </header>
+      <button class="leave">مغادرة النظام</button>
+      <button class="delete-all hidden">حذف الكل</button>
+      <div class="leave-popup z-50 transition duration-300 scale-0 shadow-lg">
+        <h1 class="text-3xl font-bold text-center mb-7 sm:text-4xl">
+          هل أنت متأكد حذف جميع بيانات النظام
+        </h1>
+        <div class="btn around-flex gap-5">
+          <button class="accept">نعم</button>
+          <button class="no">لا</button>
+        </div>
+      </div>
+      <div class="features-bar pt-[90px] w-full">
+        <div
+          class="container flex justify-between items-start flex-col gap-5 sm:flex-row sm:gap-0"
+        >
+          <div
+            class="search text-xl shadow-md bg-[#f9f9f9] rounded-md overflow-hidden w-full sm:w-fit"
+          >
+            <img
+              src="./magnifying-glass-backup-svgrepo-com.svg"
+              alt=""
+              class="text-gray-400 mr-2 ml-2"
+            />
+            <input
+              type="text"
+              class="py-3 bg-inherit"
+              placeholder="ابحث عن الحافظين هنا"
+            />
+          </div>
+          <div class="side flex flex-col gap-3 w-full sm:w-fit">
+            <button class="addUsers shadow-md">أضافة حافظين</button>
+            <div class="filter-box relative">
+              <div
+                class="filter font-semibold bg-[#f9f9f9] py-3 px-4 rounded-md shadow-md cursor-pointer text-base sm:text-lg"
+              >
+                <img src="./arrow-down-svgrepo-com.svg" alt="" class="mr-1" />
+                تحديد الحافظين على حسب الجزء
+              </div>
+              <div class="filter-options">
+                <p data-goza="goza-all">الكل</p>
+                <p data-goza="goza-first">الجزء 1 - 10</p>
+                <p data-goza="goza-second">الجزء 11 - 20</p>
+                <p data-goza="goza-third">الجزء 21 - 30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="boxs-container container pt-5 flex flex-wrap gap-5 transition-all duration-300"
+      ></div>
+    </div>
+    <div
+      class="add-form fixed top-[60px] left-0 h-full w-full bg-white origin-left scale-x-0 transition-all duration-300"
+    >
+      <div class="container">
+        <h1
+          class="title mt-5 text-2xl font-bold border-b-2 border-main w-fit pb-2"
+        >
+          <button
+            class="bg-[#eee] text-white px-3 mr-3 py-3 pt-2 rounded-lg mb-1 transition-all duration-300 shadow-sm hover:bg-[#f3f3f3]"
+          >
+            <img
+              src="./left-return-arrow-svgrepo-com.svg"
+              class="w-[30px] h-[25px]"
+              alt=""
+            /></button
+          >أضافة الحافظين
+        </h1>
+        <form
+          action=""
+          class="form-add mt-7 flex flex-wrap gap-5 justify-center"
+        >
+          <div>
+            <label for="name">الأسم:</label>
+            <input
+              type="text"
+              class="nameInput"
+              id="name"
+              placeholder="أسم الحافظ"
+            />
+          </div>
+          <div>
+            <label for="name">التسميع المرة اللي جاية:</label>
+            <input
+              type="text"
+              class="tasmea3Input"
+              id="name"
+              placeholder="التسميع"
+            />
+          </div>
+          <div>
+            <label for="name">الشيخ الذي هو معه:</label>
+            <input
+              type="text"
+              class="elshea5Input"
+              id="name"
+              placeholder="الشيخ"
+            />
+          </div>
+          <div>
+            <label for="name">الجزء الذي هو فيه:</label>
+            <input
+              type="number"
+              class="gozaInput"
+              id="name"
+              placeholder="الجزء"
+            />
+          </div>
+          <div>
+            <label for="name">تم تسميع:</label>
+            <input
+              type="text"
+              class="tmAltasmea4Input"
+              id="name"
+              placeholder="تم التسميع"
+            />
+          </div>
+          <div>
+            <label for="name">عدد مرات الحضور:</label>
+            <input
+              type="number"
+              class="hodorInput"
+              id="name"
+              placeholder="عدد مرات الحضور"
+            />
+          </div>
+        </form>
+        <button type="button" class="add-user-btn">أضافة</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

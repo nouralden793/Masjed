@@ -1,0 +1,126 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: 0.05s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0eb9a8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0f9e90;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+.layout {
+  background: url(./sunrise.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+body.dark-mode .layout {
+  background: url(./sunset.png) no-repeat top;
+  background-size: cover;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.mode,
+.search,
+.filter {
+  display: flex;
+}
+
+.mode img {
+  width: 0px;
+  display: none;
+  margin-right: 10px;
+}
+
+.search img {
+  width: 25px;
+}
+
+.filter img {
+  width: 20px;
+}
+
+.box img {
+  width: 24px;
+}
+
+@media (min-width: 450px) {
+  .mode img {
+    display: block !important;
+  }
+  .filter img {
+    width: 30px;
+  }
+}
